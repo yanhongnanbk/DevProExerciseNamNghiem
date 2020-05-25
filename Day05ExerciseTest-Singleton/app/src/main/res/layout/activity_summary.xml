@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SummaryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainLabel">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainLabel">
+
+            <ImageButton
+                android:id="@+id/summary_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/color_new_contact_button"
+                android:paddingStart="@dimen/_20sdp"
+                android:src="@drawable/summary_back"
+                android:tint="@color/colorMainText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@id/summary_back"
+                android:text="@string/your_order"
+                android:textColor="@color/colorMainText"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/summary_product_name_top"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:textColor="@color/colorMainBackground"
+            android:textSize="@dimen/_14sdp" />
+        <TextView
+            android:id="@+id/summary_product_price_top"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/colorMainBackground"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/summary_product_count_top"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_gravity="end"
+            android:gravity="center"
+
+            android:textColor="@color/colorMainBackground"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/summary_product_price_single_total_top"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:gravity="center"
+
+            android:textColor="@color/colorMainBackground"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/summary_list_view"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/summary_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_price"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/summary_total_price_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:text="0"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

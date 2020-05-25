@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Day05ExerciseTest</string>
+    <string name="valid_password">Nhập mật khẩu đúng yêu cầu đề bài</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">login</string>
+    <string name="empty_password_username">Không được để trống Username và password</string>
+    <string name="error_password"><![CDATA[Mật khẩu nhập vào phải bao gồm ký tự hoa, thường, ký tự đặc biệt!@#$%^&*]]></string>
+    <string name="food_order">Food order</string>
+    <string name="shopping_cart_counter">0</string>
+    <string name="total_price">Total price</string>
+    <string name="order">Order</string>
+    <string name="your_order">Your order</string>
+    <string name="product_1">Product #1</string>
+    <string name="_0">0</string>
+    <string name="price">Price</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total</string>
+</resources>
